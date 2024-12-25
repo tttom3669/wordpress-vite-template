@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import { liveReload } from 'vite-plugin-live-reload';
 import { resolve } from 'path';
+import UnoCSS from 'unocss/vite';
 import { GeneratePhpEnv } from './js/generate-php-env';
 
 export default defineConfig(({ command, mode }) => {
@@ -10,6 +11,7 @@ export default defineConfig(({ command, mode }) => {
       liveReload([
         resolve(__dirname, './**/*.php'),
       ]),
+      UnoCSS(),
       GeneratePhpEnv()
     ],
     root: '',
