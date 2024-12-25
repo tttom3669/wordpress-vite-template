@@ -17,16 +17,20 @@
 ## 資料夾結構
   - assets # 靜態資源放置處
     - scss # SCSS 的樣式放置處
-    - js #JavaScript 程式碼放置處
+    - js # JavaScript 程式碼放置處
 
   - inc 
-    - vite-setting.php #vite 相關設定
+    - vite-setting.php # vite 相關設定
+
   - js 
-    - generate-php-env.js #vite 環境變數處理
+    - generate-php-env.js # vite 環境變數處理
+
   - src
-    - vite.entry.js #vite 開發模式 js 進入點
-    - main.js #vite 主要 js 進入點
-  - uno.config.ts #unocss 設定檔
+    - vite.entry.js # vite 開發模式 js 進入點
+    - main.js # vite 主要 js 進入點
+    
+  - uno.config.ts # unocss 設定檔
+  
   - vite.config.js # vite 設定檔
 
 ### 注意事項
