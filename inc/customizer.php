@@ -1,8 +1,8 @@
 <?php
 /**
- * test Theme Customizer
+ * vite-template Theme Customizer
  *
- * @package test
+ * @package vite-template
  */
 
 /**
@@ -10,7 +10,7 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function test_customize_register( $wp_customize ) {
+function vite_template_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
@@ -20,26 +20,26 @@ function test_customize_register( $wp_customize ) {
 			'blogname',
 			array(
 				'selector'        => '.site-title a',
-				'render_callback' => 'test_customize_partial_blogname',
+				'render_callback' => 'vite_template_customize_partial_blogname',
 			)
 		);
 		$wp_customize->selective_refresh->add_partial(
 			'blogdescription',
 			array(
 				'selector'        => '.site-description',
-				'render_callback' => 'test_customize_partial_blogdescription',
+				'render_callback' => 'vite_template_customize_partial_blogdescription',
 			)
 		);
 	}
 }
-add_action( 'customize_register', 'test_customize_register' );
+add_action( 'customize_register', 'vite_template_customize_register' );
 
 /**
  * Render the site title for the selective refresh partial.
  *
  * @return void
  */
-function test_customize_partial_blogname() {
+function vite_template_customize_partial_blogname() {
 	bloginfo( 'name' );
 }
 
@@ -48,14 +48,14 @@ function test_customize_partial_blogname() {
  *
  * @return void
  */
-function test_customize_partial_blogdescription() {
+function vite_template_customize_partial_blogdescription() {
 	bloginfo( 'description' );
 }
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function test_customize_preview_js() {
-	wp_enqueue_script( 'test-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
+function vite_template_customize_preview_js() {
+	wp_enqueue_script( 'vite-template-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
 }
-add_action( 'customize_preview_init', 'test_customize_preview_js' );
+add_action( 'customize_preview_init', 'vite_template_customize_preview_js' );
