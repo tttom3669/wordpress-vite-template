@@ -1,0 +1,23 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=development vite",
+    "build": "NODE_ENV=production vite build --mode development",
+    "bundle": "NODE_ENV=production vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@unocss/preset-uno": "^0.65.2",
+    "@unocss/reset": "^0.65.2",
+    "sass": "^1.83.0",
+    "unocss": "^0.65.2",
+    "vite": "^6.0.5",
+    "vite-plugin-live-reload": "^3.0.4"
+  }
+}
