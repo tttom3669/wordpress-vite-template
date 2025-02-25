@@ -16,7 +16,8 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
-	<button type="button" class="bg-[blue] text-white">Default</button>
+	<button type="button" class="bg-blue-300 text-white">Default</button>
+	<button type="button" class="bg-[red] text-white">tailwind css</button>
 
 	<?php
 	if (have_posts()):

@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import { liveReload } from 'vite-plugin-live-reload';
 import { resolve } from 'path';
 import { GeneratePhpEnv } from './js/generate-php-env';
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig(({ command, mode }) => {
   const cssMinify = mode !== 'development';
@@ -10,7 +11,8 @@ export default defineConfig(({ command, mode }) => {
       liveReload([
         resolve(__dirname, './**/*.php'),
       ]),
-      GeneratePhpEnv()
+      GeneratePhpEnv(),
+      tailwindcss(),
     ],
     root: '',
     base: process.env.NODE_ENV === 'development' ? '/' : '/dist/',
