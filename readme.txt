@@ -1,4 +1,4 @@
-=== vite-templatetest ===
+=== vite-template ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -26,7 +26,7 @@ Description
 
 = Does this theme support any plugins? =
 
-test includes support for WooCommerce and for Infinite Scroll in Jetpack.
+vite-template includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
