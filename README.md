@@ -16,6 +16,8 @@
 
 ## 資料夾結構
   - assets # 靜態資源放置處
+    - css # CSS 的樣式放置處
+      - tailwind.css # tailwind CSS 主要程式碼
     - scss # SCSS 的樣式放置處
     - js # JavaScript 程式碼放置處
 
@@ -28,9 +30,7 @@
   - src
     - vite.entry.js # vite 開發模式 js 進入點
     - main.js # vite 主要 js 進入點
-
-  - postcss.config.js # postcss 設定檔，使用 postcss 來編譯 tailwind
-
+      
   - tailwind.config.js # tailwind 設定檔
 
   - vite.config.js # vite 設定檔
