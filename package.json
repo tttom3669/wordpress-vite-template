@@ -14,7 +14,6 @@
   "license": "ISC",
   "devDependencies": {
     "@tailwindcss/vite": "^4.0.8",
-    "autoprefixer": "^10.4.20",
     "sass": "^1.83.0",
     "tailwindcss": "^4.0.8",
     "vite": "^6.0.5",
